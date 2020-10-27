@@ -239,6 +239,7 @@ int main(int argc, char * argv[]){
     cudaInit();
 
     // @todo - cli args.
+    // @todo - better results reporting - performance is better than runtime.
     // Probably better to ask for N samples in total, and calc threads based on that (or use a grid strided loop + full device launch.)
     const unsigned int STATES = 262144;
     const unsigned int SAMPLES_PER_STATE = 65536;
